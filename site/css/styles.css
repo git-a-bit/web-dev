@@ -1,0 +1,7 @@
+.row{
+
+	background: red;
+}
+[class*="col"]{
+	border:2px solid black;
+}

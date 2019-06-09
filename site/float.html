@@ -1,0 +1,53 @@
+<!--let's see the floating prperty-->
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewpoint" content="width=device-width, initial-scale:1.0">
+	<title>Float</title>
+	<style>
+		*{
+			box-sizing:border-box;
+		}
+		h1{
+			border-bottom:3px outset black;
+			border-left:3px outset black;
+			width:60%;
+		}
+		p{
+			width:50%;
+			color:white;
+			border:2px solid black;
+			background:grey;
+			padding:10px;
+		}
+		#left{
+			float:left;
+		}
+		#right{
+			float:right;
+		}
+		section{
+			clear:both;
+		}
+	</style>
+</head>
+<body>
+<h1>Float</h1>
+<div style="border:2px groove black">
+	<p id="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p id="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<section>I am the content after float</section>
+</div>
+</body>
+</html>

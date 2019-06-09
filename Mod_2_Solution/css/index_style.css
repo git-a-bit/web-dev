@@ -1,0 +1,103 @@
+*{
+	box-sizing:border-box;
+	font-family:arial,monospace,serif,"Times New Roman",Times;
+}
+h1{
+	text-align:center;
+	size:1.75em;
+}
+
+.row::after{
+ content:"";
+ display:table;
+ clear:both;
+}
+.row{
+	width:100%;
+}
+[class*="col"]{
+	float:left;
+	padding:10px;
+}
+[class*="col"] div{
+	border:1px solid black;
+	padding:0px;
+	background:grey;
+}
+[class*="title"]{
+    text-align:center;
+	width:30%;
+	float:right;
+	border:1px solid black;
+	font-size:1.25em;
+	margin:0px;
+	margin-bottom:10px;
+}
+
+p+p{
+	color:white;
+	clear:both;
+	text-align:center;
+	margin:10px;
+}
+.chicken{
+	background:#FF8080;
+}
+.beef{
+	background:#Cf4848;
+}
+.sushi{
+	background:#FFF6AA;
+}
+/*** Responsive Layout ****/
+/**** For Desktop Version ****/
+
+@media (min-width:992px)
+{
+.col-lg-1{width:8.33%;}
+.col-lg-2{width:16.66%;}
+.col-lg-3{width:25%;}
+.col-lg-4{width:33.33%;}
+.col-lg-5{width:41.66%;}
+.col-lg-6{width:50%;}
+.col-lg-7{width:58.33%;}
+.col-lg-8{width:66.66%;}
+.col-lg-9{width:75%;}
+.col-lg-10{width:83.33%;}
+.col-lg-11{width:91.66%;}
+.col-lg-12{width:100%;}
+}		
+
+/*** For Tablet version ***/
+@media (min-width:768px) and (max-width:991px)
+{
+	.col-md-1{width:8.33%;}
+	.col-md-2{width:16.66%;}
+	.col-md-3{width:25%;}
+	.col-md-4{width:33.33%;}
+	.col-md-5{width:41.66%;}
+	.col-md-6{width:50%;}
+	.col-md-7{width:58.33%;}
+	.col-md-8{width:66.66%;}
+	.col-md-9{width:75%;}
+	.col-md-10{width:83.33%;}
+	.col-md-11{width:91.66%;}
+	.col-md-12{width:100%;}
+}
+
+/*** For Mobile version ***/
+@media (max-width:767px)
+{		
+	.col-sm-1{width:8.33%;}
+	.col-sm-2{width:16.66%;}
+	.col-sm-3{width:25%;}
+	.col-sm-4{width:33.33%;}
+	.col-sm-5{width:41.66%;}
+	.col-sm-6{width:50%;}
+	.col-sm-7{width:58.33%;}
+	.col-sm-8{width:66.66%;}
+	.col-sm-9{width:75%;}
+	.col-sm-10{width:83.33%;}
+	.col-sm-11{width:91.66%;}
+	.col-sm-12{width:100%;}
+}

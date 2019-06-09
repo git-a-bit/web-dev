@@ -1,0 +1,98 @@
+<!--lets make some responsive Web layout-->
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewpoint" content="width=device-width, initial-scale:1.0"> 
+	<title>Responsive web Layout</title>
+	<style>
+		*{
+			box-sizing:border-box;
+		}
+		h1{
+			background:#A88383;
+			border:1px dashed black;
+		}
+		div{
+			
+			padding:10px;
+            border:2px solid black;
+            background: grey;
+         }
+		.row{
+			width:100%;
+			background-color: grey;
+			border:1px inset black;
+		}
+		.row::after{
+			content:"";
+			clear:both;
+			display:table;
+		}
+
+		p{
+			background:#D3B3B3;
+			padding:10px;
+			border:2px solid black;
+		}
+		@media(min-width:1200px){
+             [class*="col-lg"]{
+             	float:left;
+  
+             }
+              [class*="col-lg"]:hover{
+              	transform:scale(1.1);
+              	z-index:1;
+              }
+			.col-lg-1{width:8.33%;}
+			.col-lg-2{width:16.66%;}
+			.col-lg-3{width:25%;}
+			.col-lg-4{width:33.33%;}
+			.col-lg-5{width:41.66%;}
+			.col-lg-6{width:50%;}
+			.col-lg-7{width:58.33%;}
+			.col-lg-8{width:66.66%;}
+			.col-lg-9{width:75%;}
+			.col-lg-10{width:83.33%;}
+			.col-lg-11{width:91.66%;}
+			.col-lg-12{width:100%;}
+		}
+		@media(min-width:942px) and (max-width:1199px){
+             [class*="col-md"]{
+             	float:left;
+  
+             }
+			.col-md-1{width:8.33%;}
+			.col-md-2{width:16.66%;}
+			.col-md-3{width:25%;}
+			.col-md-4{width:33.33%;}
+			.col-md-5{width:41.66%;}
+			.col-md-6{width:50%;}
+			.col-md-7{width:58.33%;}
+			.col-md-8{width:66.66%;}
+			.col-md-9{width:75%;}
+			.col-md-10{width:83.33%;}
+			.col-md-11{width:91.66%;}
+			.col-md-12{width:100%;}
+		}
+
+	</style>
+</head>
+<body>
+ <h1>Hello! lets see Responsive Layout</h1>
+ <div class="row">
+  <div class="col-lg-3 col-md-6"><p>i am P1</p></div>
+  <div class="col-lg-3 col-md-6"><p>i am P2</p></div>
+  <div class="col-lg-3 col-md-6"><p>i am P3</p></div>
+  <div class="col-lg-3 col-md-6"><p>i am P4</p></div>
+  <div class="col-lg-3 col-md-6"><p>i am P5</p></div>
+  <div class="col-lg-3 col-md-6"><p>i am P6</p></div>
+  <div class="col-lg-3 col-md-6"><p>i am P7</p></div>
+  <div class="col-lg-3 col-md-6"><p>i am P8</p></div>
+  <div class="col-lg-3 col-md-6"><p>i am P9</p></div>
+  <div class="col-lg-3 col-md-6"><p>i am P10</p></div>
+  <div class="col-lg-3 col-md-6"><p>i am P11</p></div>
+  <div class="col-lg-3 col-md-6"><p>i am P12</p></div>
+</div>
+</body>
+</html>

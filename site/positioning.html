@@ -1,0 +1,52 @@
+<!--This example is for various positioning methods in html like static,relative,absolute-->
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewpoint" content="width=device-width, initial-scale:1.0"/>
+	<title>positioning</title>
+	<style>
+		
+		div{
+			background:grey;
+			border:2px inset black;
+			position: relative;
+			width:50%;
+			height:300px;
+		}
+		p{
+			height:50px;
+			width:50px;
+			border:2px outset white;
+		}
+		#p1{
+			position: relative;
+			top:70px;
+			left:65px;
+		}
+		#p2{
+			position:absolute;
+			top:0;left:0;
+		}
+
+	</style>
+</head>
+<body>
+<h1> Lets see some Positions in html</h1>
+<div style="position: sticky; top:0px;width:60%; background:red"></div>
+<p id="p1" style="width:60%;height:100px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div  id="container">
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+</div>
+<div ></div>
+<div></div>
+<div></div>
+</body>
+</html>
