@@ -4,6 +4,8 @@ body{
 	font-family:oxygen,serif;
     font-size:16px;
 } 
+
+/***** Header****/
 #header-nav{
 	background-color:#F6B319;
 }
@@ -69,13 +71,72 @@ body{
  	clear:both;
  	margin-top:-30px;
  }
- #jumbrotronImg .jumbotron{
+ /****** Header end***/
+
+ /****Home page****/
+ #main-content .jumbotron{
  	box-shadow: 0 0 50px #3F0C1F;
     border: 2px solid #3F0C1F;
  }
+
+ #menu-tile, #special-tile, #map-tile{
+ 	width:100%;
+ 	height:250px;
+ 	margin-bottom:10px;
+ 	overflow:hidden;
+ 	position: relative;
+    border: 2px solid #3F0C1F;
+ }
+  #menu-tile:hover, #special-tile:hover, #map-tile:hover{
+  	box-shadow:0 1px 5px 1px #cccccc;
+  }
+  #menu-tile {
+  background: url('../images/menu-tile.jpg') no-repeat;
+  background-position: center;
+}
+#special-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+#menu-tile span, #special-tile span, #map-tile span{
+	position:absolute;
+	bottom:0;
+	right:0;
+	text-align:center;
+	font-size:1.6em;
+	width:100%;
+	background-color:black;
+	opacity: 0.8;
+	color:white;
+	text-transform:uppercase;
+}
+/* footer */
+.panel-footer{
+	background: #222;
+	margin:30px 0;
+	border:0;
+	padding: 20px 0;
+}
+#hours, #address{
+	line-height: 2;
+}
+#hours > span, #address > span{
+	font-size:1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
  /***** Largee screens *****/
  @media (min-width:1200px){
- 	#jumbotronImg .jumbotron{
+ 	#main-content .jumbotron{
  		background: url("../images/jumbotron_1200.jpg");
  		height:675px;
  	}
@@ -87,20 +148,21 @@ body{
  		height:100px;
  		weight:100px;
  	}
- 	#jumbotronImg .jumbotron{
+ 	#main-content .jumbotron{
  		background: url("../images/jumbotron_992.jpg");
  		height:558px;
  	}
  }
- /**** small screens ****/
+  /**** small screens ****/
  @media (min-width:768px) and (max-width:991px){
- 	#jumbotronImg .jumbotron{
+ 	#main-content .jumbotron{
  		background: url("../images/jumbotron_768.jpg");
  		height:432px;
  	}
  }
  /**** extra small screens ****/
  @media (max-width:767px){
+ 	/* Header*/
  	.navbar-brand{
  		padding-top:10px;
  		height:80px;
@@ -119,8 +181,33 @@ body{
     #mytarget span{
     	margin-right: 5px;
     }
-    #jumbotronImg .jumbotron{
+    /* home page */
+    #main-content .jumbotron{
     	padding:0;
     	margin-top:30px;
     }
+    #menu-tile, #special-tile{
+    	width:360px;
+    	margin:0 auto 10px;
+    }
+     /* footer*/
+    .panel-footer section{
+    	margin-bottom:30px;
+    	text-align:center;
+    }
+    .panel-footer hr{
+    	width:70%
+    }
  }
+ /* super extra small screens*/
+ @media (max-width: 479px){
+    /* home page */
+    #menu-tile, #special-tile{
+    	width:280px;
+    	margin:0 auto 10px;
+    }
+    .navbar-header h1{
+    	font-size: 6vw;
+    }
+
+}
