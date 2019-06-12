@@ -134,6 +134,79 @@ body{
 #testimonials p:nth-child(2) {
   margin-top: 25px;
 }
+/** menu-categories **/
+.category-tile{
+	position:relative;
+	height:200px;
+	width:200px;
+	border: 2px solid #3F0C1F;
+    overflow: hidden;
+    margin:0 auto 15px;
+}
+.category-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+.category-tile span{
+	position:absolute;
+	bottom:0;
+	right:0;
+	color:white;
+	text-transform: uppercase;
+	width:100%;
+	text-align:center;
+	background: #222;
+	opacity: 0.8;
+	font-size:1.2em;
+}
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/** menu-categories ends **/
+
+/** single-category**/
+.menu-item-tile{
+	margin-bottom:30px;
+}
+.menu-item-tile hr{
+	width:90%;
+}
+.menu-item-tile .menu-item-price{
+   font-size:1.1em;
+   text-align:right;
+   margin-right:-15px;
+}
+.menu-item-tile .menu-item-price span{
+	font-size:0.6em;
+}
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #3F0C1F; 
+  overflow: hidden;
+  padding:0;
+  margin-right:-15px;
+  margin-left:auto;
+  max-width: 250px;
+  margin-bottom:5px;
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+}
+/** single-category ends **/
  /***** Largee screens *****/
  @media (min-width:1200px){
  	#main-content .jumbotron{
@@ -198,6 +271,16 @@ body{
     .panel-footer hr{
     	width:70%
     }
+    .menu-item-photo{
+    	margin-left:auto;
+    	margin-right:auto;
+    }
+    .menu-item-tile .menu-item-price{
+    	text-align:center;
+    }
+    .menu-item-tile .menu-item-description{
+    	text-align:center;
+    }
  }
  /* super extra small screens*/
  @media (max-width: 479px){
@@ -208,6 +291,13 @@ body{
     }
     .navbar-header h1{
     	font-size: 6vw;
+    }
+    .col-xss-12{
+    	width:100%;
+    	position: relative;
+        min-height: 1px;
+ 	 	padding-right: 15px;
+  	 	padding-left: 15px;
     }
 
 }
