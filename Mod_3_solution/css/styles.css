@@ -1,0 +1,60 @@
+body{
+  background:#61122F;
+  color:#AA4A39;
+}
+.navbar-brand{
+  height:auto;
+  padding:0;
+}
+.navbar-brand a:hover{
+  text-decoration: none;
+}
+.navbar-brand h1{
+  text-transform: uppercase;
+  color:#FFAAAA;
+}
+.navbar-header button, .navbar-header span{
+  border:1px solid #FFAAAA;
+}
+#navbartarget{
+  color:#FFAAAA;
+  font-size:1.2em;
+  text-align:center;
+}
+#navbartarget hr{
+  width:70%;
+  margin-top:0;
+  margin-bottom:10px;
+}
+#title{
+  text-decoration:underline;
+  text-transform: capitalize;
+}
+.menu-tile{
+  position:relative;
+  margin-bottom: 15px;
+  border:2px solid #AA4A39;
+  background:#4d0015;
+  color:#FFAAAA;
+  text-align: justify;
+  font-size:1.2em;
+}
+.menu-tile h3{
+  color:#AA4A39;
+  text-transform: capitalize;
+}
+.menu-tile a{
+  position: absolute;
+  bottom:0;
+  right:0;
+  color:black;
+  background:#FFAAAA;
+  padding:0 5px;
+}
+.menu-tile a:hover{
+  text-decoration: none;
+}
+.menu-tile:hover{
+  border:2px outset #AA4A39;
+  box-shadow:2px 2px 4px 3px #AA4A39;
+}
